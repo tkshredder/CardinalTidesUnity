@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{91CF6BDF-8B2D-3705-3FEA-D2FFCD5A8BF9}</ProjectGuid>
+	<ProjectGuid>{C9B09175-D4C0-3EB8-CCEF-E8BA145930C9}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -129,12 +129,15 @@
      <Compile Include="Assets\Scripts\Animations\CardinalSpotlightSequence.cs" />
      <Compile Include="Assets\Scripts\ButtonListener.cs" />
      <Compile Include="Assets\Scripts\CommandDetails.cs" />
+     <Compile Include="Assets\Scripts\CommandPanel.cs" />
      <Compile Include="Assets\Scripts\Controls.cs" />
      <Compile Include="Assets\Scripts\CrewMember.cs" />
+     <Compile Include="Assets\Scripts\CrewMemberStats.cs" />
      <Compile Include="Assets\Scripts\FadeIn.cs" />
      <Compile Include="Assets\Scripts\FloatObject.cs" />
      <Compile Include="Assets\Scripts\Highlighter.cs" />
      <Compile Include="Assets\Scripts\MenuButton.cs" />
+     <Compile Include="Assets\Scripts\SelectCrewMember.cs" />
      <Compile Include="Assets\Scripts\ShakeCamera.cs" />
      <Compile Include="Assets\iTween\Plugins\iTween.cs" />
      <Compile Include="Assets\iTween\Sample\MoveSample.cs" />
@@ -144,6 +147,7 @@
      <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo20.txt" />
      <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo14.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Masked Colored.shader" />
+     <None Include="Assets\HOTween\HOTween_License.txt" />
      <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo18.txt" />
      <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Header.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (AlphaClip).shader" />
@@ -162,6 +166,9 @@
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (SoftClip).shader" />
  <Reference Include="Assets\NGUI\DLLs\NGUI">
  <HintPath>Assets\NGUI\DLLs\NGUI.dll</HintPath>
+ </Reference>
+ <Reference Include="Assets\HOTween\HOTween">
+ <HintPath>Assets\HOTween\HOTween.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

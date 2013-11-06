@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{B37046A8-4937-2531-4B26-73B568ED6B76}</ProjectGuid>
+	<ProjectGuid>{89E62C9A-7103-FED8-AF39-0041F27111B4}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -76,6 +76,7 @@
      <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo20.txt" />
      <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo14.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Masked Colored.shader" />
+     <None Include="Assets\HOTween\HOTween_License.txt" />
      <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo18.txt" />
      <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Header.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (AlphaClip).shader" />
@@ -92,6 +93,12 @@
      <None Include="Assets\NGUI\Examples\Shaders\Refractive.shader" />
      <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Normal.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (SoftClip).shader" />
+ <Reference Include="Assets\NGUI\DLLs\NGUI">
+ <HintPath>Assets\NGUI\DLLs\NGUI.dll</HintPath>
+ </Reference>
+ <Reference Include="Assets\NGUI\DLLs\Editor\NGUI_Editor">
+ <HintPath>Assets\NGUI\DLLs\Editor\NGUI_Editor.dll</HintPath>
+ </Reference>
  <Reference Include="\Applications\Unity\Unity.app\Contents\Frameworks\Managed\UnityEditor.Graphs">
  <HintPath>\Applications\Unity\Unity.app\Contents\Frameworks\Managed\UnityEditor.Graphs.dll</HintPath>
  </Reference>
@@ -104,18 +111,18 @@
  <Reference Include="\Applications\Unity\Unity.app\Contents\PlaybackEngines\AndroidPlayer\EditorExtensions\UnityEditor.Android.Extensions">
  <HintPath>\Applications\Unity\Unity.app\Contents\PlaybackEngines\AndroidPlayer\EditorExtensions\UnityEditor.Android.Extensions.dll</HintPath>
  </Reference>
- <Reference Include="Assets\NGUI\DLLs\Editor\NGUI_Editor">
- <HintPath>Assets\NGUI\DLLs\Editor\NGUI_Editor.dll</HintPath>
+ <Reference Include="Assets\HOTween\HOTween">
+ <HintPath>Assets\HOTween\HOTween.dll</HintPath>
  </Reference>
- <Reference Include="Assets\NGUI\DLLs\NGUI">
- <HintPath>Assets\NGUI\DLLs\NGUI.dll</HintPath>
+ <Reference Include="Assets\HOTween\Editor\HOTweenV1_Editor">
+ <HintPath>Assets\HOTween\Editor\HOTweenV1_Editor.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{91CF6BDF-8B2D-3705-3FEA-D2FFCD5A8BF9}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
+      <Project>{C9B09175-D4C0-3EB8-CCEF-E8BA145930C9}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
     <ProjectReference Include="Assembly-UnityScript.unityproj">
-      <Project>{FE0D5048-3617-6A70-ED01-0E92CB1D71A8}</Project>      <Name>Assembly-UnityScript</Name>    </ProjectReference>
+      <Project>{0DFACC3C-160B-B039-5E2C-0B55FE6BC8F4}</Project>      <Name>Assembly-UnityScript</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
