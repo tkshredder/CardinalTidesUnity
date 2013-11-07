@@ -12,7 +12,6 @@ public class SelectCrewMember : MonoBehaviour {
 	public List<GameObject> crewMembers;
 	public CommandPanel _commandPanel;
 	
-	
 	// Use this for initialization
 	void Start () {
 	
@@ -40,7 +39,29 @@ public class SelectCrewMember : MonoBehaviour {
 		
 		iTween.MoveTo(_shipCamera, new Vector3(crewMembers[_currentCrewIndex].transform.position.x,_shipCamera.transform.position.y,_shipCamera.transform.position.z), 0.2f);
 		
-		_commandPanel.setDescription(_currentCrewIndex.ToString());
+		CrewMember temp = crewMembers[_currentCrewIndex].GetComponent("CrewMember") as CrewMember;
 		
+		//_commandPanel.setDescription(temp._command1);
+		
+		_commandPanel._commandLabels[0].text = temp._command1;
+		_commandPanel._commandLabels[1].text = temp._command2;
+		//_commandPanel.
+		
+		//GameObject btnLabel = _commandPanel._commandButtons[0].Find("Animation/UILabel");
+		//btnLabel.text = temp._command1;
+	
+		
+	}
+	
+	public string GetCurrentCommandDesc() {
+		CrewMember temp = crewMembers[_currentCrewIndex].GetComponent("CrewMember") as CrewMember;
+		
+		if (UICamera.hoveredObject == _commandPanel._commandButtons[0]) {
+			return temp._command1desc;
+		}
+		if (UICamera.hoveredObject == _commandPanel._commandButtons[1]) {
+			return temp._command2desc;
+		}
+		return temp._command1desc;
 	}
 }

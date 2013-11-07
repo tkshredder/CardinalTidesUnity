@@ -8,6 +8,8 @@ public class CommandPanel : MonoBehaviour {
 	public UILabel _descriptionLabel;
 	public UILabel _outcomeLabel;
 	
+	// lol the wrong way...
+	public List<UILabel> _commandLabels;
 	
 	// Use this for initialization
 	void Start () {
